@@ -10,5 +10,5 @@ public class EntityTextOption<T, TArea> : IEntityTextOption<T, TArea>
     public string FieldId { get; set; }
     public Type AreaType { get; set; }
     public Type EntityType { get; set; }
-    public bool MultiSelect { get; set; } // Support for multi select for fetching multiple entities
+    public bool MultiSelect { get; set; }
 }

@@ -4,6 +4,7 @@ using Litium.FieldFramework;
 using Litium.FieldFramework.FieldTypes;
 using Litium.Runtime;
 using Litium.Security;
+using SpotOn.Litium.EntityTextOption.Entities;
 using SpotOn.Litium.EntityTextOption.Entity;
 
 namespace SpotOn.Litium.EntityTextOption;
@@ -46,17 +47,17 @@ public class DefinitionSetup : IAsyncAutostart
 
     private void CreateFields()
     {
-        foreach (var test in _entityTextOptions)
+        foreach (var option in _entityTextOptions)
         {
-            var currentField = _fieldDefinitionService.Get(test.AreaType, test.FieldId);
+            var currentField = _fieldDefinitionService.Get(option.AreaType, option.FieldId);
             if (currentField == null)
             {
-                var item = new FieldDefinition(test.FieldId, SystemFieldTypeConstants.TextOption, test.AreaType)
+                var item = new FieldDefinition(option.FieldId, SystemFieldTypeConstants.TextOption, option.AreaType)
                 {
                     Option = new TextOption
                     {
-                        MultiSelect = test.MultiSelect,
-                        Items = _entityTextOptionService.GetEntityItems(test.EntityType)
+                        MultiSelect = option.MultiSelect,
+                        Items = _entityTextOptionService.GetEntityItems(option.EntityType)
                     }
                 };
 

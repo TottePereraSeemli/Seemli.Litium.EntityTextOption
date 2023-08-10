@@ -114,10 +114,6 @@ public class ChannelEventListener : IAsyncAutostart
         _eventBroker.Subscribe<PaymentProviderDeleted>(_ => UpdateField(typeof(PaymentProvider)));
         _eventBroker.Subscribe<PaymentProviderDeleted>(_ => UpdateField(typeof(PaymentProvider)));
 
-        _eventBroker.Subscribe<RmaUpdated>(_ => UpdateField(typeof(Rma)));
-        _eventBroker.Subscribe<RmaDeleted>(_ => UpdateField(typeof(Rma)));
-        _eventBroker.Subscribe<RmaDeleted>(_ => UpdateField(typeof(Rma)));
-
         _eventBroker.Subscribe<ShippingProviderUpdated>(_ => UpdateField(typeof(ShippingProvider)));
         _eventBroker.Subscribe<ShippingProviderDeleted>(_ => UpdateField(typeof(ShippingProvider)));
         _eventBroker.Subscribe<ShippingProviderDeleted>(_ => UpdateField(typeof(ShippingProvider)));

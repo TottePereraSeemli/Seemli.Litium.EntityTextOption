@@ -115,7 +115,6 @@ public class Tests
         services.AddSingleton<PaymentProviderService, PaymentProviderServiceImpl>();
         services.AddSingleton<PriceListService, PriceListServiceImpl>();
         services.AddSingleton<RelationshipTypeService, RelationshipTypeServiceImpl>();
-        services.AddSingleton<RmaService, RmaServiceImpl>();
         services.AddSingleton<RoleService, RoleServiceImpl>();
         services.AddSingleton<ShippingProviderService, ShippingProviderServiceImpl>();
         services.AddSingleton<TaxClassService, TaxClassServiceImpl>();

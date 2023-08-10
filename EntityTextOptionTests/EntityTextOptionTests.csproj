@@ -22,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\SpotOn.Litium.EntityTextOption\SpotOn.Litium.EntityTextOption.csproj" />
+      <ProjectReference Include="..\Seemli.Litium.EntityTextOption\Seemli.Litium.EntityTextOption.csproj" />
     </ItemGroup>
 
 </Project>

@@ -13,9 +13,9 @@ using Litium.Products;
 using Litium.Runtime;
 using Litium.Sales;
 using Microsoft.Extensions.DependencyInjection;
-using SpotOn.Litium.EntityTextOption;
-using SpotOn.Litium.EntityTextOption.Entities;
-using SpotOn.Litium.EntityTextOption.Registrations;
+using Seemli.Litium.EntityTextOption;
+using Seemli.Litium.EntityTextOption.Entities;
+using Seemli.Litium.EntityTextOption.Registrations;
 using Xunit;
 
 namespace EntityTextOptionTests;
